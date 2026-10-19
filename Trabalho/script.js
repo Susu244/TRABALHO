@@ -1,11 +1,16 @@
-const Nome = document.getElementById("Nome");
-const Email = document.getElementById("Email");
-const Senha = document.getElementById("Senha");
-const botaoCadastrar = document.getElementById("Cadastrar");
+const nome = document.getElementById("nome");
+const senha = document.getElementById("senha");
+const botaocadastrar = document.getElementById("cadastrar");
 
-botaoCadastrar.addEventListener("click", function() {
+botaocadastrar.addEventListener("click", function() {
     const nomeNome = nome.value;
-    const emailEmail = email.value;
-    const senhaDigitado = senha.value;
-    
+    const senhaDigitada = senha.value; 
+
+if(nomeNome === "aluno" && senhaDigitada === "2026" ) {
+    alert("Bem-vindo ao sistema!");
+} else if(nomeNome === "" || senhaDigitada === ""){
+    alert("Preencha todos os campos")
+} else {
+    alert ("Acesso negado");
+}
 });
